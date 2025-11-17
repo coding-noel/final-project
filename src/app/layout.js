@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata = {
-  title: 'Next.js demo',
-  description: 'A really cool Next.js site',
+  title: 'Poem Colab',
+  description: 'Read and share poems',
 }
 
 export default function RootLayout({ children }) {
