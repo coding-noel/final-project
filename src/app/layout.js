@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata = {
-  title: 'Poem Colab',
+  title: 'Poem Collab',
   description: 'Read and share poems',
 }
 

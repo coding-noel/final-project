@@ -7,7 +7,7 @@ import Footer from '../components/Footer'
 export default function Home() {
   return (
     <div>
-      <div className="p-12">
+      <div className="p-8">
         <Header h1='Poems'>
           A full list of all the poems on this site
         </Header>

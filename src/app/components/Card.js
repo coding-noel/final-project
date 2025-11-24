@@ -1,7 +1,3 @@
-
-
-import Content from './Content'
-
 export default function Card({ title = "Put title here", poem = "Put poem here" }) {
   return (
     <div className="grow w-96 flex flex-col rounded-lg hover:scale-105 transition-all shadow-lg border-6 border-blue-300">

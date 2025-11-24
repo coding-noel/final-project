@@ -1,13 +1,7 @@
 import Button from './Button'
 import Tag from './Tag'
-import { AcademicCapIcon } from '@heroicons/react/24/solid'
 import Image from 'next/image'
-//public/logo.png
-//src/app/components/Navbar.js
 
-
-/*<div className="logo bg-indigo-600 rounded-full p-6 hover:scale-105 transition-all cursor-pointer"></div>
-*/
 const navigationButtons = [
   {
     title: 'Home',
@@ -15,8 +9,8 @@ const navigationButtons = [
     isNew: false
   },
   {
-    title: 'Catagories',
-    href: '/catagories',
+    title: 'Categories',
+    href: '/categories',
     isNew: false
   },
   {
@@ -25,8 +19,8 @@ const navigationButtons = [
     isNew: false
   },
   {
-    title: 'Contributers',
-    href: '/contributers',
+    title: 'Contributors',
+    href: '/contributors',
     isNew: false
   },
   {
