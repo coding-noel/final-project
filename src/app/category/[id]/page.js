@@ -35,9 +35,14 @@ export default function ElementPage({ params }) {
       <Main>
       <div className="flex gap-x-12 my-12 flex-wrap gap-y-6">
         {
-          category.poemIds.map((poemId, index) => (
-            <Poem key={index} props={poemsObject[poemId]} layer="1" />
-          ))
+          category.poemIds.length > 0 ? (
+            category.poemIds.map((poemId, index) => (
+              <Poem key={index} props={poemsObject[poemId]} layer="1" />
+            ))
+          ) : (
+            <p className='text-blue-400 text-xl px-8'>This category hasn't been populated with poems yet.</p>
+          )
+          
         }
       </div>
     </Main>

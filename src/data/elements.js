@@ -225,7 +225,7 @@ export const categories = [
             {
               category: "Nature",
               id: "nature",
-              message: ""
+              poemIds: []
             },
             {
               category: "Love & Romance",
@@ -235,30 +235,37 @@ export const categories = [
             {
               category: "Haiku / Short Forms",
               id: "haiku-slash-short-forms",
+              poemIds: []
             },
             {
               category: "Humorous",
               id: "humorous",
+              poemIds: []
             },
             {
               category: "Free Verse",
               id: "free-verse",
+              poemIds: []
             },
             {
               category: "YA",
               id: "ya",
+              poemIds: []
             },
             {
               category: "Story Poems",
               id: "story-poems",
+              poemIds: []
             },
             {
               category: "Experimental",
               id: "experimental",
+              poemIds: []
             },
             {
               category: "Character Based",
               id: "character-based",
+              poemIds: []
             }
           ];
 export const poemsObject = idObjectFromArray(fullPoems)

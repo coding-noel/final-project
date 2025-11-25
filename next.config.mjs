@@ -2,6 +2,12 @@
 const nextConfig = {
   /* config options here */
   reactCompiler: true,
+  experimental: {
+    serverActions: {
+      // Add your development host to the allowed origins
+      allowedOrigins: ['localhost:3000'], 
+    },
+  },
 };
 
 export default nextConfig;
