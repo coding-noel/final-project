@@ -4,10 +4,10 @@ import { truncateSm } from '@/utils/utils';
 
 export default function HomeComponent() {
   return (
-    <div className="py-8 px-4 text-blue-700 max-w-600 mx-auto">
+    <div className="px-1 text-blue-700 max-w-600 mx-auto">
 
       <section>
-        <h3 className="text-2xl font-semibold text-blue-500 pt-6 pb-2 px-3">Welcome!</h3>
+        <h3 className="text-2xl font-semibold text-blue-500 pb-2 px-3">Welcome!</h3>
         <p className="px-5">
           Whether you're a budding poet ready to share your latest masterpiece, 
           a creative spirit trying something new, or someone who simply loves reading poetry, 
@@ -19,7 +19,7 @@ export default function HomeComponent() {
         </p>
       </section>
 
-      <hr className="bg-blue-300 h-3 mt-10 border-none" />
+      <hr className="bg-blue-300 h-2 mt-10 border-none rounded-full" />
 
 
       <section className="my-16 px-3">
@@ -61,7 +61,7 @@ export default function HomeComponent() {
             {featuredContributorBlurb}
           </p>
 
-          <a href={"people/" + people[featuredContributor].id} className="inline-block mt-4 bg-green-400 text-white px-4 py-1.5 rounded-md shadow hover:bg-green-600">
+          <a href={"people/" + people[featuredContributor].id} className="inline-block mt-4 bg-green-400 text-white px-4 py-1.5 rounded-md shadow hover:bg-green-500">
             View {people[featuredContributor].firstName}’s poems
           </a>
         </div>
@@ -109,7 +109,7 @@ export default function HomeComponent() {
           <a href="poems" className="p-5 bg-stone-50 rounded-lg border-6 border-green-300 shadow-sm">
             <h3 className="font-semibold text-green-600 mb-2">3. Explore</h3>
             <p className="text-gray-700 font-serif">
-              Browse poems from writers of all styles and voices.
+              Browse poems from writers with all kinds of different styles and messages.
             </p>
           </a>
         </div>
@@ -118,31 +118,3 @@ export default function HomeComponent() {
     </div>
   );
 }
-
-
-/*import Link from './Link'
-
-export default function HomeComponent({  }){
-  return (
-    <div className='py-8 text-blue-700 max-w-600'>
-      <section>
-        <h3 className='text-xl text-blue-800 pt-6 pb-2 px-3'>Welcome!</h3>
-        <p className='px-5 '>
-          Whether you're a budding poet ready to share your latest masterpiece, 
-          a creative spirit trying something new, or someone who simply loves reading poetry, 
-          you’re in the right place. Not sure where to begin? If you’d like to add a poem of 
-          your own, visit our <Link href="contribute">contribute</Link> page. Curious about 
-          our community? Meet other <Link href="contributors">contributors</Link>. Looking 
-          for something specific? Explore our poetry <Link href="categories">categories</Link>. 
-          Not sure what you’re looking for? That's alright, you can <Link href="poems">browse</Link> our full catalogue.
-        </p>
-      </section>
-      
-      <hr className='bg-blue-300 h-3 mt-10 border-none'/>
-      <h3 className='text-xl text-blue-800 pt-6 pb-2 px-3'></h3>
-
-
-      
-    </div>
-  )
-}*/

@@ -22,12 +22,17 @@ export default function Bio({ name = "Put name here", likes = "either this perso
     },
   ]
   return (
-    <a href={`people/${id}`}className="flex-1 min-w-70 max-w-110 rounded-lg shadow-lg">
-      <div className="">
-        <h2 className="px-6 py-2 text-xl text-white bg-blue-500 flex-1">{name}</h2>
-        <div className="p-6 pt-4">
+    <a href={`people/${id}`}className="flex-1 min-w-70 max-w-110 rounded-sm shadow-lg border-blue-300 border-2 bg-green-200 p-0.5">
+      <div className="border-2 border-blue-300 bg-white w-full h-full">
+        <h2 className="px-6 py-2 text-xl text-white bg-indigo-400 flex-1">{name}</h2>
+        
+        <div className="p-6 pt-4 flex flex-col justify-between w-full h-[calc(100%-2.5rem-4px)]">
           {info.map(({ start, message }, index) => (
-            <p className='font-serif text-blue-500 flex-1' key={index}>{start}: {message}</p>
+            <div className="m-0.5" key={index}>
+              <h4 className="font-semibold inline text-blue-500">{start}: </h4>
+              <p className='block font-serif text-blue-500 inline'>{message}</p>
+            </div>
+            
           ))}
         </div>
 
